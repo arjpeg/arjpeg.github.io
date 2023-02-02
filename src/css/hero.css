@@ -8,6 +8,8 @@
     height: 100%;
 
     position: relative;
+
+    object-fit: fill;
 }
 
 .hero-container {
@@ -15,4 +17,8 @@
 
     left: 20%;
     top: 40%;
+}
+
+.hero h1 {
+    letter-spacing: 3px;
 }

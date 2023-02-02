@@ -1,0 +1,29 @@
+.typewriter-container {
+    font-size: 2rem;
+    letter-spacing: 2px;
+
+    --border-color: rgb(70, 96, 128);
+}
+
+.typewriter {
+    border-right: .15em solid var(--border-color);
+    /* The typwriter cursor */
+
+    animation:
+
+        blink-caret 800ms step-end infinite;
+}
+
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: var(--border-color);
+    }
+}

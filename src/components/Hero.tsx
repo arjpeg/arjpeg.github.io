@@ -2,6 +2,7 @@ import HeroImage from "../assets/images/hero-img.jpeg";
 
 import "../css/hero.css";
 import Socials from "./Socials";
+import TypewriterEffect from "./TypewriterEffect";
 
 export default function Hero() {
   return (
@@ -12,6 +13,7 @@ export default function Hero() {
         <h1>Aditya Rao Udupi</h1>
 
         <Socials />
+        <TypewriterEffect words={["Webdev", "Python", "Gamedev", "Java"]} />
       </div>
     </section>
   );
