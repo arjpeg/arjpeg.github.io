@@ -4,7 +4,9 @@ import "../css/hero.css";
 import Socials from "./Socials";
 import TypewriterEffect from "./TypewriterEffect";
 
-export default function Hero() {
+type Props = {};
+
+export default function Hero(props: Props) {
   return (
     <section className="hero">
       <img className="hero-image" src={HeroImage} alt="Background image" />

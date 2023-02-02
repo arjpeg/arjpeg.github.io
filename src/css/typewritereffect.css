@@ -7,11 +7,7 @@
 
 .typewriter {
     border-right: .15em solid var(--border-color);
-    /* The typwriter cursor */
-
-    animation:
-
-        blink-caret 800ms step-end infinite;
+    animation: blink-caret 800ms step-end infinite;
 }
 
 
