@@ -1,0 +1,10 @@
+.socials {
+    display: flex;
+    align-items: flex-start;
+
+    column-gap: 20px;
+}
+
+.social-icon {
+    width: 25px;
+}
