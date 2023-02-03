@@ -1,3 +1,5 @@
+import ContactInfo from "./ContactInfo";
+
 export default function AboutMe() {
   const school =
     new Date().getFullYear() >= 2023
@@ -15,6 +17,11 @@ export default function AboutMe() {
         Classical Flute) to help me relax! My goal in life is to always continue
         to learn, and never give up.
       </p>
+
+      <br />
+      <p style={{ fontSize: "1.4rem", fontWeight: "bold" }}>Contact Info</p>
+
+      <ContactInfo />
     </section>
   );
 }

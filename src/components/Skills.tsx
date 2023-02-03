@@ -18,7 +18,7 @@ export default function Skills() {
       image: ReactIcon,
       description:
         "I have worked with ReactJS for a while, now getting used to its syntax, and becoming proficient in the library. In fact, this very website was made in React!",
-      years: 1.3,
+      years: "1/4",
       url: "https://reactjs.org/"
     },
     {
@@ -58,7 +58,8 @@ export default function Skills() {
               style={{
                 animation: inView
                   ? `fadeInRight 0.8s cubic-bezier(0.23, 1, 0.32, 1) ${delay}s forwards`
-                  : ""
+                  : "",
+                display: inView ? "block" : "none"
               }}
             />
           );
