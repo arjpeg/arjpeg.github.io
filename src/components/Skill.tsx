@@ -14,8 +14,6 @@ type Props = {
 };
 
 export default function Skill(props: SkillType & Props) {
-  console.log(props.url);
-
   return (
     <div className="skill" style={props.style}>
       <img
