@@ -58,8 +58,7 @@ export default function Skills() {
               style={{
                 animation: inView
                   ? `fadeInRight 0.8s cubic-bezier(0.23, 1, 0.32, 1) ${delay}s forwards`
-                  : "",
-                display: inView ? "block" : "none"
+                  : ""
               }}
             />
           );

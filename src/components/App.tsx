@@ -1,5 +1,6 @@
 import Hero from "./Hero";
 import MainContent from "./MainContent";
+import ResumeContent from "./ResumeContent.tsx";
 import ScrollToTop from "./ScrollToTop";
 
 export default function App() {
@@ -7,6 +8,7 @@ export default function App() {
     <>
       <Hero />
       <MainContent />
+      <ResumeContent />
       <ScrollToTop />
     </>
   );
