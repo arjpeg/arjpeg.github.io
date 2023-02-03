@@ -41,34 +41,6 @@
     background-color: rgb(87, 121, 162, 0.5);
 }
 
-.timeline-item-name {
-    position: relative;
-}
-
-.timeline-item-name::before {
-    content: '';
-    position: absolute;
-    top: 25%;
-    left: -30px;
-
-    height: 50%;
-    aspect-ratio: 1 / 1;
-
-    max-height: 12.5px;
-
-    border-radius: 50%;
-
-    background-color: #eee;
-}
-
-.timeline-item-date {
-    font-size: 1rem;
-    color: rgb(238, 238, 238, 0.7);
-}
-
-.timeline-item-description {
-    margin-left: 30px;
-}
 
 .timeline-name {
     font-size: 2rem;

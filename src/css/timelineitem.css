@@ -1,0 +1,57 @@
+/* .timeline-item {
+} */
+
+.timeline-item-name {
+    position: relative;
+}
+
+.timeline-item-name::before {
+    content: '';
+    position: absolute;
+    top: 25%;
+    left: -30px;
+
+    height: 50%;
+    aspect-ratio: 1 / 1;
+
+    max-height: 12.5px;
+
+    border-radius: 50%;
+
+    background-color: #eee;
+}
+
+.timeline-item-date {
+    font-size: 1rem;
+    color: rgb(238, 238, 238, 0.7);
+}
+
+.timeline-item-description {
+    margin-left: 30px;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.show {
+    animation: show 0.4s ease-in 0s forwards;
+}
+
+/*
+ANIMATIONS
+*/
+
+@keyframes show {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+        filter: blur(5px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        filter: blur(0);
+    }
+}
