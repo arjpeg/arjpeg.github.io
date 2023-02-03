@@ -22,7 +22,7 @@ export default function ScrollToTop() {
 
   return (
     <button
-      style={{ display: showButton ? "block" : "none" }}
+      style={{ opacity: showButton ? "100%" : "0%" }}
       onClick={handleClick}
       className="scrolltotop"
     >
