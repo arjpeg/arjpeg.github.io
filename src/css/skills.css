@@ -1,0 +1,15 @@
+.skill-list {
+    width: 100%;
+
+    display: flex;
+    flex-flow: row wrap;
+
+    justify-content: center;
+
+    column-gap: 20px;
+    row-gap: 50px;
+
+    margin-top: 50px;
+
+    position: relative;
+}
