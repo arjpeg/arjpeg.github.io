@@ -3,7 +3,8 @@ import "../css/sectiontitle.css";
 
 export default function SectionTitle({ title }: { title: string }) {
   const { ref, inView } = useInView({
-    threshold: 0
+    threshold: 0,
+    triggerOnce: true
   });
 
   return (

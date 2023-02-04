@@ -5,7 +5,8 @@ import { Event } from "./TimeLine";
 
 export default function TimeLineItem({ event }: { event: Event }) {
   const { ref, inView } = useInView({
-    threshold: 0
+    threshold: 0,
+    triggerOnce: true
   });
 
   return (
