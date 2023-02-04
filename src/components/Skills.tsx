@@ -8,10 +8,6 @@ import PythonIcon from "../assets/icons/PythonIcon.png";
 import ReactIcon from "../assets/icons/ReactIcon.png";
 
 export default function Skills() {
-  const { ref, inView } = useInView({
-    threshold: 0.4
-  });
-
   const skills: SkillType[] = [
     {
       title: "React",
@@ -40,7 +36,7 @@ export default function Skills() {
   ];
 
   return (
-    <section ref={ref}>
+    <section>
       <h2 className="section-title">My Skills</h2>
 
       <div className="skill-list">
@@ -55,11 +51,7 @@ export default function Skills() {
               years={skill.years}
               url={skill.url}
               key={index}
-              style={{
-                animation: inView
-                  ? `fadeInRight 0.8s cubic-bezier(0.23, 1, 0.32, 1) ${delay}s forwards`
-                  : ""
-              }}
+              animationDelay={delay}
             />
           );
         })}

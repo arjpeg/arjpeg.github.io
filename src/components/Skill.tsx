@@ -1,3 +1,4 @@
+import { useInView } from "react-intersection-observer";
 import "../css/skill.css";
 
 export type SkillType = {
@@ -10,12 +11,27 @@ export type SkillType = {
 };
 
 type Props = {
-  style?: any;
+  animationDelay?: number;
 };
 
 export default function Skill(props: SkillType & Props) {
+  const { ref, inView } = useInView({
+    threshold: 0
+  });
+
+  let style = {
+    opacity: inView ? 1 : 0,
+    animation: inView
+      ? `fadeInRight 0.8s cubic-bezier(0.23, 1, 0.32, 1) ${props.animationDelay}s forwards`
+      : ""
+  };
+
+  if (!inView) {
+    style.opacity = 0;
+  }
+
   return (
-    <div className="skill" style={props.style}>
+    <div ref={ref} className="skill" style={style}>
       <img
         className="skill-image"
         src={props.image}
