@@ -20,7 +20,7 @@ export default function Skill(props: SkillType & Props) {
   });
 
   let style = {
-    opacity: inView ? 1 : 0,
+    opacity: 0,
     animation: inView
       ? `fadeInRight 0.8s cubic-bezier(0.23, 1, 0.32, 1) ${props.animationDelay}s forwards`
       : ""

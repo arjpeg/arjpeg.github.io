@@ -1,4 +1,3 @@
-import { useInView } from "react-intersection-observer";
 import Skill, { SkillType } from "./Skill";
 
 import "../css/skills.css";
