@@ -5,6 +5,7 @@ import "../css/skills.css";
 import FlaskIcon from "../assets/icons/FlaskIcon.png";
 import PythonIcon from "../assets/icons/PythonIcon.png";
 import ReactIcon from "../assets/icons/ReactIcon.png";
+import SectionTitle from "./SectionTitle";
 
 export default function Skills() {
   const skills: SkillType[] = [
@@ -36,7 +37,7 @@ export default function Skills() {
 
   return (
     <section>
-      <h2 className="section-title">My Skills</h2>
+      <SectionTitle title="My Skills" />
 
       <div className="skill-list">
         {skills.map((skill, index) => {

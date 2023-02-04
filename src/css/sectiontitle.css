@@ -1,0 +1,48 @@
+.section-title {
+    font-size: 3.5rem;
+    position: relative;
+}
+
+.section-title::before {
+    content: "";
+
+    width: 110%;
+    height: 2px;
+
+    background: rgb(238, 238, 238, 0.7);
+
+    display: block;
+
+    position: absolute;
+
+    top: 200%;
+    left: -5%;
+}
+
+.section-title::after {
+    content: "";
+
+    width: 50%;
+    height: 2px;
+
+    background: rgb(70, 96, 128);
+
+    display: block;
+
+    position: absolute;
+
+    top: 200%;
+    left: 22.5%;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

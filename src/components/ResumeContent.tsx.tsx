@@ -1,4 +1,5 @@
 import "../css/resumecontent.css";
+import SectionTitle from "./SectionTitle";
 import TimeLine, { Event } from "./TimeLine";
 
 export default function ResumeContent() {
@@ -40,7 +41,7 @@ export default function ResumeContent() {
 
   return (
     <div className="resume-content">
-      <h2 className="section-title resume-title">Resume</h2>
+      <SectionTitle title="Resume" />
 
       <div className="timelines">
         <TimeLine name="Education" events={educationEvents} />

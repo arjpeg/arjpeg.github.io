@@ -1,4 +1,5 @@
 import ContactInfo from "./ContactInfo";
+import SectionTitle from "./SectionTitle";
 
 export default function AboutMe() {
   const school =
@@ -8,7 +9,7 @@ export default function AboutMe() {
 
   return (
     <section>
-      <h2 className="section-title">About Me</h2>
+      <SectionTitle title="About Me" />
 
       <p>
         Hi! My name is Aditya Rao Udupi, and I am a student currently studying
