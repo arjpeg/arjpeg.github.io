@@ -1,3 +1,4 @@
+import ContactMe from "./ContactMe";
 import Hero from "./Hero";
 import MainContent from "./MainContent";
 import ProjectContent from "./ProjectContent";
@@ -11,6 +12,7 @@ export default function App() {
       <MainContent />
       <ResumeContent />
       <ProjectContent />
+      <ContactMe />
       <ScrollToTop />
     </>
   );
