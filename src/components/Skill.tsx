@@ -38,7 +38,7 @@ export default function Skill(props: SkillType & Props) {
         alt={`Logo of ${props.title}`}
       />
       <div style={{ textAlign: "center" }}>
-        <a className="skill-name" href={props.url}>
+        <a target="_blank" className="skill-name" href={props.url}>
           <h3>{props.title}</h3>
         </a>
       </div>

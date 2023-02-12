@@ -20,7 +20,13 @@ export default function ContactLink(props: Props) {
   };
 
   return (
-    <a ref={ref} className="contact-link" href={props.href} style={style}>
+    <a
+      target="_blank"
+      ref={ref}
+      className="contact-link"
+      href={props.href}
+      style={style}
+    >
       {props.text}
     </a>
   );

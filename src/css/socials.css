@@ -8,3 +8,11 @@
 .social-icon {
     width: 25px;
 }
+
+.socials a {
+    transition: all 0.3s ease;
+}
+
+.socials a:hover {
+    transform: scale(1.3);
+}
